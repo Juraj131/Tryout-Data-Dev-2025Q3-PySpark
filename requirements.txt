@@ -1,9 +1,31 @@
-# Requirements for PySpark Account Balance Report
-pyspark>=3.3.0
-jupyter>=1.0.0
-pandas>=1.3.0
-numpy>=1.20.0
+# PySpark Account Balance Report - Requirements
+# Compatible with Python 3.11+ and Java 11+
 
-# Optional for enhanced functionality
-matplotlib>=3.3.0
-seaborn>=0.11.0
+# Core PySpark and Big Data Processing
+pyspark>=4.0.0,<5.0.0          # Apache Spark for distributed computing
+py4j>=0.10.9                   # Python-Java bridge for PySpark
+
+# Data Processing and Analysis
+pandas>=2.0.0,<3.0.0           # Data manipulation and analysis
+numpy>=1.24.0,<2.0.0           # Numerical computing support
+
+# Jupyter Notebook Environment
+jupyter>=1.0.0,<2.0.0          # Jupyter notebook environment
+ipykernel>=6.0.0,<7.0.0        # IPython kernel for Jupyter
+notebook>=6.4.0,<8.0.0         # Classic Jupyter notebook interface
+
+# Code Quality and Formatting
+black>=23.0.0,<24.0.0          # Python code formatter
+black[jupyter]>=23.0.0         # Black support for Jupyter notebooks
+
+# Data Visualization (Optional)
+matplotlib>=3.7.0,<4.0.0       # Basic plotting library
+seaborn>=0.12.0,<1.0.0         # Statistical data visualization
+
+# Development and Testing Support
+pytest>=7.0.0,<8.0.0           # Testing framework
+pytest-cov>=4.0.0,<5.0.0       # Coverage reporting
+
+# Java Dependencies (managed by PySpark)
+# Note: Requires Java 11+ to be installed separately
+# Set JAVA_HOME environment variable to Java installation path
